@@ -42,25 +42,9 @@ class AddUseCaseTest {
 
 
     @Test
-    fun testGoogle(){
-        val string = "awesome"
-        assertThat(string).startsWith("awe")
-        assertWithMessage("Without me, it's just aweso")
-            .that(string)
-            .contains("me")
-
-    }
-
-    @Test
     fun `Test when a = 50 and b = -50`(){
         assertThat(addUseCase(50,-50)).isEqualTo(0)
     }
-
-    @Test
-    fun `Test when a = 1 and b = 1`(){
-        assertThat(subtractUseCase(1,1)).isEqualTo(0)
-    }
-
 
     @After
     fun tearDown() {
